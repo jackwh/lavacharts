@@ -76,6 +76,8 @@ class DataTable implements Jsonable, JsonSerializable
      */
     protected $dateTimeFormat;
 
+    protected ?DateTimeZone $timezone = null;
+
     /**
      * Creates a new DataTable
      *
