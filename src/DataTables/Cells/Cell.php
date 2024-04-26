@@ -134,7 +134,7 @@ class Cell extends Customizable
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $json = ['v' => $this->v];
 
