@@ -709,7 +709,7 @@ class DataTable implements Jsonable, JsonSerializable
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'cols' => $this->cols,
