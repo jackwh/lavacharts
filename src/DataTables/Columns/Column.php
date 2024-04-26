@@ -124,7 +124,7 @@ class Column extends Customizable
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $values = [
             'type' => $this->type
