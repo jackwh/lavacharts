@@ -68,7 +68,7 @@ class Wrapper extends Customizable implements \JsonSerializable, Jsonable, JsCla
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return array_merge($this->options, [
             'options'     => $this->contents,
