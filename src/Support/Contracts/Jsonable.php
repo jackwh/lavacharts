@@ -31,5 +31,5 @@ interface Jsonable extends JsonSerializable
      *
      * @return array
      */
-    public function jsonSerialize();
+    public function jsonSerialize(): mixed;
 }

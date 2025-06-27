@@ -76,6 +76,8 @@ class DataTable implements Jsonable, JsonSerializable
      */
     protected $dateTimeFormat;
 
+    protected ?DateTimeZone $timezone = null;
+
     /**
      * Creates a new DataTable
      *
@@ -707,7 +709,7 @@ class DataTable implements Jsonable, JsonSerializable
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'cols' => $this->cols,

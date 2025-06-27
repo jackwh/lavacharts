@@ -123,7 +123,7 @@ class DateCell extends Cell
      *
      * @return string
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return ['v' => (string) $this];
     }
